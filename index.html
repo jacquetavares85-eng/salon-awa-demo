@@ -103,6 +103,8 @@
 
   <h1 id="accueil">Salon Awa</h1>
   <p>Coiffure et beauté, avec soin et élégance.</p>
+  <button onclick="afficherMessage()">Clique ici</button>
+<p id="message"></p>
 
   <div class="galerie">
     <a href="coiffure1%20-%20Copie.jpg" target="_blank">
@@ -143,5 +145,11 @@
 
   <h2 id="contact">Contact</h2>
   <a href="https://wa.me/221XXXXXXXXX">Écrire au salon sur WhatsApp</a>
+<script>
+  function afficherMessage() {
+    document.getElementById("message").textContent =
+      "Bravo, ton premier JavaScript fonctionne !";
+  }
+</script>
 </body>
 </html>
