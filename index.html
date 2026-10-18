@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Salon Awa</title>
 
   <style>
@@ -11,7 +10,6 @@
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 40px;
-      margin: 0;
     }
 
     h1,
@@ -74,10 +72,6 @@
     }
 
     @media (max-width: 700px) {
-      body {
-        padding: 20px;
-      }
-
       nav {
         position: static;
         width: auto;
@@ -103,22 +97,24 @@
 
   <h1 id="accueil">Salon Awa</h1>
   <p>Coiffure et beauté, avec soin et élégance.</p>
+  <button onclick="afficherMessage()">Clique ici</button>
+<p id="message"></p>
 
   <div class="galerie">
-    <a href="coiffure1%20-%20Copie.jpg" target="_blank">
-      <img src="coiffure1%20-%20Copie.jpg" alt="Coiffure 1">
+    <a href="Coiffure1%20-%20Copie.jpg" target="_blank">
+      <img src="Coiffure1%20-%20Copie.jpg" alt="Coiffure réalisée au salon">
     </a>
 
-    <a href="coiffure2%20-%20Copie.jpg" target="_blank">
-      <img src="coiffure2%20-%20Copie.jpg" alt="Coiffure 2">
+    <a href="Coiffure2%20-%20Copie.jpg" target="_blank">
+      <img src="Coiffure2%20-%20Copie.jpg" alt="Coiffure réalisée au salon">
     </a>
 
-    <a href="coiffure3%20.jpg" target="_blank">
-      <img src="coiffure3%20.jpg" alt="Coiffure 3">
+    <a href="Coiffure3%20-%20Copie.jpg" target="_blank">
+      <img src="Coiffure3%20-%20Copie.jpg" alt="Coiffure réalisée au salon">
     </a>
 
     <a href="coiffure4.jpg" target="_blank">
-      <img src="coiffure4.jpg" alt="Coiffure 4">
+      <img src="coiffure4.jpg" alt="Coiffure réalisée au salon">
     </a>
   </div>
 
@@ -143,5 +139,11 @@
 
   <h2 id="contact">Contact</h2>
   <a href="https://wa.me/221XXXXXXXXX">Écrire au salon sur WhatsApp</a>
+<script>
+  function afficherMessage() {
+    document.getElementById("message").textContent =
+      "Bravo, ton premier JavaScript fonctionne !";
+  }
+</script>
 </body>
 </html>
